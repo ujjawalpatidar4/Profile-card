@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.main {
+    background-color: rgb(242 224 250);
+    padding: 44px;
+    height: 100%;
+}
+
+.container {
+    border: 2px solid black;
+    width: 30%;
+    text-align: center;
+    height: auto;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 20px 20px 0 0;
+}
+
+.image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    margin: 30px;
+}
+
+.image .profile-photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.text-data {
+    line-height: 1.4;
+}
+
+.work h4 {
+    font-weight: lighter;
+}
+
+.social {
+    margin: 10px;
+}
+
+.social img {
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    width: 50%;
+    margin: 10px auto;
+    justify-content: space-around;
+
+}
+
+button {
+    background-color: #4070f4;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 30px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    border: transparent;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+button:hover {
+    background-color: #0e4bf1;
+}
+
+.likes {
+    margin: 20px;
+    display: flex;
+}
+
+.likes img {
+    height: 35px;
+}
+
+.data {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
